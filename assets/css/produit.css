@@ -1,0 +1,14 @@
+nav{
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    height: var( --navbar-height );
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 var( --global-horizontal-padding );
+    box-sizing: border-box;
+    border-bottom: 1px solid var( --border-color );
+    background-color: #fff;
+}
