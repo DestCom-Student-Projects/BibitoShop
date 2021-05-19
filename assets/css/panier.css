@@ -1,0 +1,46 @@
+.case{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.case > img{
+    width: 20%;
+}
+
+.case > div > h4{
+    font-size: 25px;
+}
+
+.case > p{
+    font-size: 20px;
+    padding-top: 12%;
+    font-weight: bold;
+}
+
+.info{
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
+    width: 100%;
+}
+
+.info>p{
+    font-style: italic;
+}
+
+
+
+.info>a:hover{
+    opacity: 0.5;
+}
+
+.info>img{
+    width: 8%;
+}
+
+#quantity{
+    margin-top: 15px;
+    height: 15px;
+    width: 30px;
+}
