@@ -3,4 +3,4 @@ Faux site de vente, créant la page produit d'après un JSON et exporte les info
 
 Developpé par : 
 - VERGER Eva : [LinkedIn](https://www.linkedin.com/in/eva-verger/)
-- AZEVEDO DA SILVA Antoine : [ LinkedIn](https://www.linkedin.com/in/antoine-ads/)
+- AZEVEDO DA SILVA Antoine : [LinkedIn](https://www.linkedin.com/in/antoine-ads/)
