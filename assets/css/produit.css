@@ -1,0 +1,45 @@
+.sort {
+	display: flex;
+	align-self: flex-end;
+}
+
+.filtre {
+    display: flex;
+	flex-direction: row  ;
+    
+}
+
+label { 
+    margin-right: 10px; 
+    margin-left: 10px; 
+}
+
+.produits {
+	display: flex;
+    margin-top: 50px;
+    margin-left: 20px; 
+    flex-wrap: wrap;
+}
+
+.produit-carte {
+	display: flex;
+	flex-direction: column;
+    margin-right: 40px; 
+    margin-left: 40px; 
+    margin-top: 40px;
+}
+
+.produit-image img {
+	size: 20px;
+}
+
+.produit-info {
+	
+	padding-top: 10px;
+	text-align: center;
+}
+
+img {
+	width: 150px;
+	height: 150px;
+}
