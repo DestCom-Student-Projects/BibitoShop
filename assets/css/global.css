@@ -27,6 +27,6 @@ li {
 }
 
 ul a:hover{
-    content: ">";
+    color: white;
     
 }
