@@ -1,3 +1,7 @@
+#cart{
+    margin: 5vw;
+}
+
 .case{
     display: flex;
     justify-content: space-around;
@@ -5,7 +9,8 @@
 }
 
 .case > img{
-    width: 20%;
+    width: 150px;
+    height: 150px;
 }
 
 .case > div > h4{
@@ -29,9 +34,7 @@
     font-style: italic;
 }
 
-
-
-.info>a:hover{
+.info>img:hover{
     opacity: 0.5;
 }
 
@@ -39,7 +42,7 @@
     width: 8%;
 }
 
-#quantity{
+.quantity{
     margin-top: 15px;
     height: 15px;
     width: 30px;

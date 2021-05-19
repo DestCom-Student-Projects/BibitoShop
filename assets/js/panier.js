@@ -2,63 +2,95 @@ var panier = {
     "2": {
         "nom": "tkt",
         "prix": '14.99€',
-        "imageSrc" : "eeeee",
+        "imageSrc": "eeeee",
         "quantity": '3'
     },
     "7": {
         "nom": "eeee",
         "prix": '17.99€',
-        "imageSrc" : "eeeee",
+        "imageSrc": "eeeee",
+        "quantity": '2'
+    },
+    "5": {
+        "nom": "eeee",
+        "prix": '17.99€',
+        "imageSrc": "eeeee",
+        "quantity": '2'
+    },
+    "9": {
+        "nom": "eeee",
+        "prix": '17.99€',
+        "imageSrc": "eeeee",
+        "quantity": '2'
+    },
+    "15": {
+        "nom": "eeee",
+        "prix": '17.99€',
+        "imageSrc": "eeeee",
         "quantity": '2'
     }
 }
 
 var test = document.querySelector('.listCart');
 
-test.addEventListener('click', function () {
-    console.log(panier);
-    Object.keys(panier).forEach( key => {
-        let blocUn = document.createElement('div');
-        blocUn.classList.toggle('case');
 
-        let image = document.createElement('img');
-        image.src = "assets/img/bibito.png";
-        image.alt = panier[key].nom;
+console.log(panier);
 
-        let blocDeux = document.createElement('div');
+Object.keys(panier).forEach(key => {
+    let blocUn = document.createElement('div');
+    blocUn.classList.toggle('case');
 
-        let h4 = document.createElement('h4');
-        h4.innerHTML = panier[key].nom;
+    let image = document.createElement('img');
+    image.src = "assets/img/bibito.png";
+    image.alt = panier[key].nom;
 
-        let blocTrois = document.createElement('div');
-        blocTrois.classList.toggle("info");
+    let blocDeux = document.createElement('div');
 
-        let textPrix = document.createElement('p');
-        textPrix.innerHTML = panier[key].prix;
+    let h4 = document.createElement('h4');
+    h4.innerHTML = panier[key].nom;
 
-        let qunt = document.createElement('input');
-        qunt.type = "number";
-        qunt.id = "quantity";
-        qunt.name = "quantity";
-        qunt.min = "1";
-        qunt.max = "9";
+    let blocTrois = document.createElement('div');
+    blocTrois.classList.toggle("info");
 
-        let trash = document.createElement('img');
-        trash.src = "assets/img/trash-solid.svg";
+    let textPrix = document.createElement('p');
+    textPrix.innerHTML = panier[key].prix;
 
-        let textPrixTot = document.createElement('p');
-        textPrixTot.innerHTML = "14.99€";
+    let qunt = document.createElement('input');
+    qunt.type = "number";
+    let aiedi = "quantity" + key;
+    qunt.classList.toggle("quantity");
+    qunt.id = aiedi;
+    qunt.name = aiedi;
+    qunt.min = "1";
+    qunt.max = "9";
 
-        blocTrois.appendChild(textPrix);
-        blocTrois.appendChild(qunt);
-        blocTrois.appendChild(trash);
+    let trash = document.createElement('img');
+    trash.src = "assets/img/trash-solid.svg";
+    trash.classList.toggle('poubelle');
+    trash.classList.toggle(key);
 
-        blocDeux.appendChild(h4);
-        blocDeux.appendChild(blocTrois);
 
-        blocUn.appendChild(image);
-        blocUn.appendChild(blocDeux);
-        test.appendChild(blocUn);
-    }) ;
+    let textPrixTot = document.createElement('p');
+    textPrixTot.innerHTML = "14.99€";
 
+    blocTrois.appendChild(textPrix);
+    blocTrois.appendChild(qunt);
+    blocTrois.appendChild(trash);
+
+    blocDeux.appendChild(h4);
+    blocDeux.appendChild(blocTrois);
+
+    blocUn.appendChild(image);
+    blocUn.appendChild(blocDeux);
+    test.appendChild(blocUn);
 });
+
+var produitBloc = document.querySelectorAll('.case');
+var numPoubelle = document.querySelectorAll('.poubelle');
+
+numPoubelle.forEach((bloc, numCase) => {
+    numPoubelle[numCase].addEventListener('click', function(e){
+        console.log(bloc, numCase);
+        produitBloc[numCase].remove();
+    });
+})
