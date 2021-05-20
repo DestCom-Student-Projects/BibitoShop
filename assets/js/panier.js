@@ -57,10 +57,10 @@ Object.keys(panier).forEach(key => {
 
     let qunt = document.createElement('input');
     qunt.type = "number";
-    let aiedi = "quantity" + key;
+    let ayedi = "quantity" + key;
     qunt.classList.toggle("quantity");
-    qunt.id = aiedi;
-    qunt.name = aiedi;
+    qunt.id = ayedi;
+    qunt.name = ayedi;
     qunt.min = "1";
     qunt.max = "9";
 
