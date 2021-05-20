@@ -1,8 +1,14 @@
 var appelProduit = new XMLHttpRequest();
 var produitPlace = document.querySelector('.produits');
 var test = document.querySelectorAll('.panier');
+
+console.log(panier);
+
 if (panier == undefined) {
     var panier = {};
+}
+else{
+    panier = JSON.parse(localStorage.getItem('panier'));
 }
 
 appelProduit.open('GET', 'assets/json/produits.json');
@@ -47,7 +53,6 @@ appelProduit.onload = function () {
     console.log("aaaaaaaa", test);
     test.forEach((item, index) => {
         test[index].addEventListener('click', function (e) {
-            console.log("hmmmmmmm");
             panier[index + 1] = data[index + 1];
             console.log(panier);
             localStorage.setItem('panier', JSON.stringify(panier));

@@ -1,5 +1,5 @@
-var leaul = JSON.parse(localStorage.getItem('panier'));
-console.log(leaul)
+var cart = JSON.parse(localStorage.getItem('panier'));
+
 var panier = {
     "2": {
         "nom": "tkt",
@@ -36,26 +36,26 @@ var panier = {
 var test = document.querySelector('.listCart');
 var boutonAchat = document.querySelector('.buttonAchat');
 
-console.log(panier);
+console.log(cart);
 
-Object.keys(panier).forEach(key => {
+Object.keys(cart).forEach(key => {
     let blocUn = document.createElement('div');
     blocUn.classList.toggle('case');
 
     let image = document.createElement('img');
-    image.src = "assets/img/bibito.png";
-    image.alt = panier[key].nom;
+    image.src = cart[key].source_img;
+    image.alt = cart[key].nom;
 
     let blocDeux = document.createElement('div');
 
     let h4 = document.createElement('h4');
-    h4.innerHTML = panier[key].nom;
+    h4.innerHTML = cart[key].nom;
 
     let blocTrois = document.createElement('div');
     blocTrois.classList.toggle("info");
 
     let textPrix = document.createElement('p');
-    textPrix.innerHTML = panier[key].prix;
+    textPrix.innerHTML = cart[key].prix;
 
     let qunt = document.createElement('input');
     qunt.type = "number";
@@ -73,7 +73,7 @@ Object.keys(panier).forEach(key => {
 
 
     let textPrixTot = document.createElement('p');
-    textPrixTot.innerHTML = "14.99€";
+    textPrixTot.innerHTML = cart[key].prix;
 
     blocTrois.appendChild(textPrix);
     blocTrois.appendChild(qunt);
@@ -94,6 +94,7 @@ numPoubelle.forEach((bloc, numCase) => {
     numPoubelle[numCase].addEventListener('click', function(e){
         console.log(bloc, numCase);
         produitBloc[numCase].remove();
+        console.log([numCase]);
         if(document.querySelectorAll('.case').length === 0){
             test.innerHTML = "Vous n'avez aucun produit dans votre panier !";
             boutonAchat.classList.toggle('hidden');
