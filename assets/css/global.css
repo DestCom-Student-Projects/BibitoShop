@@ -37,6 +37,11 @@ ul a {
 li {
     margin-left: 15px;
     margin-right: 15px;
+    width: 100%;
+}
+
+li>a>img{
+    width: 30%;
 }
 
 ul a:hover {
@@ -80,4 +85,8 @@ footer>div:nth-child(2n){
 
 footer>div:nth-child(3n)>img{
     width: 30%;
+}
+
+.hidden{
+    display: none;
 }
