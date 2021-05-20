@@ -6,6 +6,7 @@ appelProduit.open('GET', 'assets/json/produits.json');
 appelProduit.onload = function () {
     let data = JSON.parse(appelProduit.responseText);
     for (let i = 1; i < Object.keys(data).length; i++) {
+
         let global = document.createElement('div');
         global.classList.toggle('produit-carte');
 
@@ -23,7 +24,7 @@ appelProduit.onload = function () {
         let panier = document.createElement('input');
         panier.classList.toggle('panier');
         panier.type = "submit";
-        panier.value = "ajout";
+        panier.value = "Ajouter au panier";
         panier.name = "Submit";
 
         info.appendChild(name);
