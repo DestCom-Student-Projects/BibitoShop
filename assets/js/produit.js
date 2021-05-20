@@ -31,9 +31,9 @@ appelProduit.onload = function () {
         info.appendChild(panier);
 
         prod.appendChild(img);
-
-        global.appendChild(info);
         global.appendChild(prod);
+        global.appendChild(info);
+        
         produitPlace.appendChild(global);
         console.log("fait");
     }
