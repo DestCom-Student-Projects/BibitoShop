@@ -1,3 +1,7 @@
+body{
+    padding-top: 10vh;
+}
+
 #cart{
     margin: 5vw;
 }
