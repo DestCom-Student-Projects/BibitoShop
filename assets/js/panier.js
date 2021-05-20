@@ -1,3 +1,5 @@
+var leaul = JSON.parse(localStorage.getItem('panier'));
+console.log(leaul)
 var panier = {
     "2": {
         "nom": "tkt",
