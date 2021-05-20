@@ -64,6 +64,7 @@ footer{
     justify-content: space-around;
     color: white;
     background-color: black;
+    margin: 0;
 }
 
 footer>div:nth-child(1n)>h4{

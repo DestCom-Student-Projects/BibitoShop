@@ -1,3 +1,7 @@
+body>section:nth-child(1n){
+    padding-top: 10vh;
+}
+
 .sort {
 	display: flex;
 	align-self: flex-end;
