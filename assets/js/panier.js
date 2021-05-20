@@ -32,7 +32,7 @@ var panier = {
 }
 
 var test = document.querySelector('.listCart');
-
+var boutonAchat = document.querySelector('.buttonAchat');
 
 console.log(panier);
 
@@ -92,5 +92,14 @@ numPoubelle.forEach((bloc, numCase) => {
     numPoubelle[numCase].addEventListener('click', function(e){
         console.log(bloc, numCase);
         produitBloc[numCase].remove();
+        if(document.querySelectorAll('.case').length === 0){
+            test.innerHTML = "Vous n'avez aucun produit dans votre panier !";
+            boutonAchat.classList.toggle('hidden');
+        }
     });
-})
+});
+
+if(document.querySelectorAll('.case').length === 0){
+    test.innerHTML = "Vous n'avez aucun produit dans votre panier !";
+    boutonAchat.classList.toggle('hidden');
+}

@@ -3,7 +3,7 @@ body{
 }
 
 #cart{
-    margin: 5vw;
+    margin: 3vw;
 }
 
 .case{
@@ -50,4 +50,25 @@ body{
     margin-top: 15px;
     height: 15px;
     width: 30px;
+}
+
+.listCart{
+    margin: 5vh;
+    height: 80vh;
+    overflow-y: scroll;
+}
+
+#cart>p{
+    border:solid 3px black;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    width: 100px;
+    text-align: center;
+    margin-left: 80vw;
+    font-size: 20px;
+}
+
+#cart>h1{
+    font-size: 30px;
 }
