@@ -1,65 +1,65 @@
-body{
+body {
     padding-top: 10vh;
 }
 
-#cart{
+#cart {
     margin: 3vw;
 }
 
-.case{
+.case {
     display: flex;
     justify-content: space-around;
     width: 50%;
 }
 
-.case > img{
+.case>img {
     width: 150px;
     height: 150px;
 }
 
-.case > div > h4{
+.case>div>h4 {
     font-size: 25px;
 }
 
-.case > p{
+.case>p {
     font-size: 20px;
     padding-top: 12%;
     font-weight: bold;
 }
 
-.info{
+.info {
     display: flex;
     justify-content: space-around;
     margin: 15px;
     width: 100%;
 }
 
-.info>p{
+.info>p {
     font-style: italic;
 }
 
-.info>img:hover{
+.info>img:hover {
     opacity: 0.5;
 }
 
-.info>img{
+.info>img {
     width: 8%;
 }
 
-.quantity{
+.quantity {
     margin-top: 15px;
     height: 15px;
     width: 30px;
 }
 
-.listCart{
+.listCart {
     margin: 5vh;
-    height: 80vh;
+    height: 60vh;
     overflow-y: scroll;
 }
 
-#cart>p{
-    border:solid 3px black;
+#cart>p {
+    border: solid 3px black;
     color: white;
     background-color: black;
     border-radius: 20px;
@@ -69,22 +69,27 @@ body{
     font-size: 20px;
 }
 
-#cart>h1{
+#cart>h1 {
     font-size: 30px;
 }
 
-.formulaire {
-    border : solid 2px black;
-    border-radius : 10%;
-    width : 350px;
-    display : flex;
+form {
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-
-    
+    margin-left: 10%;
 }
 
-label{
+.formulaire {
+    /* border : solid 2px black; */
+    border-radius: 10%;
+    width: 75vw;
+    display: flex;
+    justify-content: space-around;
+    margin: 5%;
+
+}
+
+label {
     display: block;
     width: 130px;
     text-align: left;
@@ -93,20 +98,53 @@ label{
     margin-right: 5px;
 }
 
-input{
+input {
     margin-left: 170px;
     display: block;
-	width: 150px;
+    width: 150px;
 
 }
 
-h4{
-    text-align: center;
+.formulaire>h4 {
+    text-align: left;
 }
 
-.bouton{
+.bouton {
     margin-right: 10px;
     display: block;
     border-radius: 10%;
     margin-bottom: 10px;
+}
+
+.recap>div {
+    width: 30vw;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.recap>div>p:nth-child(1n) {
+    font-weight: 600;
+    width: 800px;
+    padding-left: 30px;
+}
+
+.recap>div>p:nth-child(2n) {
+    font-weight: 200;
+    font-style: italic;
+}
+
+.recap>div>p:nth-child(3n) {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.recap>.Titre {
+    border-bottom: solid 3px black;
+}
+
+.ptotalFinal {
+    text-align: right;
+    font-weight: bold;
+    font-size: 25px;
 }
