@@ -74,9 +74,13 @@ body{
 }
 
 .formulaire {
-    border:solid 2px black;
-    border-radius: 10%;
+    border : solid 2px black;
+    border-radius : 10%;
     width : 350px;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+
     
 }
 
