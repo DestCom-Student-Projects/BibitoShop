@@ -72,3 +72,37 @@ body{
 #cart>h1{
     font-size: 30px;
 }
+
+.formulaire {
+    border:solid 2px black;
+    border-radius: 10%;
+    width : 350px;
+    
+}
+
+label{
+    display: block;
+    width: 130px;
+    text-align: left;
+    float: left;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+input{
+    margin-left: 170px;
+    display: block;
+	width: 150px;
+
+}
+
+h4{
+    text-align: center;
+}
+
+.bouton{
+    margin-right: 10px;
+    display: block;
+    border-radius: 10%;
+    margin-bottom: 10px;
+}
