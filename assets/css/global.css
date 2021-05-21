@@ -41,7 +41,18 @@ li {
 }
 
 li>a>img{
-    width: 30%;
+    width: 40%;
+}
+
+li>a{
+    position: relative;
+}
+
+li>a>.nmbItems{
+    position: absolute;
+    top: -165%;
+    left: 50%;
+    color: white;
 }
 
 ul a:hover {
