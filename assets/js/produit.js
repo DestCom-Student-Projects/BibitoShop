@@ -28,7 +28,7 @@ appelProduit.onload = function () {
         let name = document.createElement('h5');
         name.innerHTML = data[i].nom;
         let price = document.createElement('h6');
-        price.innerHTML = data[i].prix;
+        price.innerHTML = data[i].prix + '€';
         let panier = document.createElement('input');
         panier.classList.toggle('panier');
         panier.type = "submit";
