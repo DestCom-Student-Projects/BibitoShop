@@ -1,3 +1,14 @@
+if (localStorage.getItem('panier') === null) {
+    var panier = {};
+    console.log('set panier')
+}
+else{
+    panier = JSON.parse(localStorage.getItem('panier'));
+}
+
+document.querySelector('.nmbItems').innerHTML = ((Object.keys(panier).length === 0)  ? ' ' : Object.keys(panier).length);
+
+/*
 var request = new XMLHttpRequest();
 var test = document.querySelector(".test");
 var dedans= document.querySelector(".affichededansla");
@@ -19,4 +30,4 @@ test.addEventListener('click', function (e) {
     }
     request.send();
     
-});
+}); */

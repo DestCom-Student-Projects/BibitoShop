@@ -10,6 +10,8 @@ else{
     panier = JSON.parse(localStorage.getItem('panier'));
 }
 
+document.querySelector('.nmbItems').innerHTML = ((Object.keys(panier).length === 0)  ? ' ' : Object.keys(panier).length);
+
 appelProduit.open('GET', 'assets/json/produits.json');
 appelProduit.onload = function () {
     let data = JSON.parse(appelProduit.responseText);

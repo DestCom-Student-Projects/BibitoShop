@@ -32,6 +32,9 @@ ul a {
     position: relative;
     color: inherit;
     text-decoration: none;
+    transition: color;
+    transition-duration: 0.2s;
+    transition-delay: 0.05s;
 }
 
 li {
@@ -53,6 +56,17 @@ li>a>.nmbItems{
     top: -165%;
     left: 50%;
     color: white;
+}
+
+.panierShop{
+    transition: filter, color;
+    transition-duration: 0.2s;
+    transition-delay: 0.05s;
+}
+
+.panierShop:hover{
+    filter: invert();
+    color: black;
 }
 
 ul a:hover {
