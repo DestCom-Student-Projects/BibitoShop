@@ -5,12 +5,11 @@ var test = document.querySelectorAll('.panier');
 if (localStorage.getItem('panier') === null) {
     var panier = {};
     console.log('set panier')
-}
-else{
+} else {
     panier = JSON.parse(localStorage.getItem('panier'));
 }
 
-document.querySelector('.nmbItems').innerHTML = ((Object.keys(panier).length === 0)  ? ' ' : Object.keys(panier).length);
+document.querySelector('.nmbItems').innerHTML = ((Object.keys(panier).length === 0) ? ' ' : Object.keys(panier).length);
 
 appelProduit.open('GET', 'assets/json/produits.json');
 appelProduit.onload = function () {
@@ -56,10 +55,8 @@ appelProduit.onload = function () {
             panier[index + 1] = data[index + 1];
             console.log(panier);
             localStorage.setItem('panier', JSON.stringify(panier));
-            document.querySelector('.nmbItems').innerHTML = ((Object.keys(panier).length === 0)  ? ' ' : Object.keys(panier).length);
+            document.querySelector('.nmbItems').innerHTML = ((Object.keys(panier).length === 0) ? ' ' : Object.keys(panier).length);
         })
     });
 }
 appelProduit.send();
-
-
