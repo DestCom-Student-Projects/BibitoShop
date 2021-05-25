@@ -15,87 +15,47 @@ header {
     top: 0;
     left: 0;
     display: flex;
+    justify-content: space-between;
     height: 10vh;
-    width: 100%;
-    justify-content: space-around;
+    width: 97vw;
+    margin: 0;
     border-bottom: 1px solid black;
     background-color: rgb(156, 151, 151);
+    padding: 5px;
 }
 
-header>a {
-    margin-right: 50vw;
-    transition: filter;
-    transition-duration: 0.2s;
-    transition-delay: 0.05s;
+.notOpen{
+    display: none;
 }
 
-header>a:hover {
-    filter: invert();
+nav{
+    height: 10vh;
+    width: auto;
 }
 
-header>a>img {
+nav>img{
     height: 85%;
-    margin: 5%;
+    margin-top: 5%;
 }
 
-ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-}
-
-ul a {
-    position: relative;
-    color: inherit;
-    text-decoration: none;
-    transition: color;
-    transition-duration: 0.2s;
-    transition-delay: 0.05s;
-}
-
-li {
-    margin-left: 15px;
-    margin-right: 15px;
+ul{
+    z-index: 10;
+    margin: 0;
+    height: 100vh;
     width: 100%;
-}
-
-li>a>img {
-    width: 40%;
-}
-
-li>a {
-    position: relative;
-}
-
-li>a>.nmbItems {
+    background-color: white;
     position: absolute;
-    top: -165%;
-    left: 35%;
-    color: white;
+    top: 10vh;
+    left: 0;
+    display: flex;
+    flex-direction: column;
 }
 
-.panierShop {
-    transition: filter, color;
-    transition-duration: 0.2s;
-    transition-delay: 0.05s;
-}
-
-.panierShop:hover {
-    filter: invert();
-    color: black;
-}
-
-ul a:hover {
-    color: white;
-
-}
-
-a {
-    text-decoration: none;
-}
-
-a:visited {
-    color: initial;
+li{
+    text-align: right;
+    margin-top: 20%;
+    width: 40vw;
+    font-size: 30px;
 }
 
 footer {
@@ -132,10 +92,4 @@ footer>div:nth-child(3n)>img {
 
 .hidden {
     display: none;
-}
-
-@media(min-width:1025px) {
-    .bars {
-        display: none;
-    }
 }
