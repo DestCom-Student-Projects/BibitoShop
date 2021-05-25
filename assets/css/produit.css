@@ -34,9 +34,7 @@ label {
 	margin-bottom: 30px;
 }
 
-.produit-image img {
-	size: 20px;
-}
+
 
 .produit-info {
 	
@@ -62,4 +60,19 @@ label {
 
 h1{
 	margin-left: 10px;
+}
+
+/* Smartphone */
+@media screen and ( max-width: 600px ) {
+	.produit-img>img {
+		width: 60px;
+		height: 60px;
+	}
+
+	.produits {
+		display: flex;
+		margin-top: 50px;
+		margin-left: 20px; 
+		flex-wrap: wrap;
+	}
 }
