@@ -34,9 +34,7 @@ label {
 	margin-bottom: 30px;
 }
 
-.produit-image img {
-	size: 20px;
-}
+
 
 .produit-info {
 
@@ -63,4 +61,29 @@ label {
 
 h1 {
 	margin-left: 10px;
+}
+
+/* Smartphone */
+@media screen and ( max-width: 600px ) {
+	.produit-img>img {
+		width: 110px;
+		height: 110px;
+	}
+	
+	.produit-carte{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(7, 1fr);
+        grid-column-gap: 0px;
+		grid-row-gap: 0px;
+	}
+	.produit-carte{
+		width: 130px;
+		height: 130px;
+	}
+	.produit-info {
+		margin-left: 20px;
+		padding-top: 10px;
+		text-align: center;
+	}
 }
