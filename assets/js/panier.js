@@ -204,7 +204,7 @@ if (cart != null) {
             localStorage.removeItem('panier');
             document.querySelector('.nmbItems').innerHTML = '';
 
-            document.querySelector('.affForm').innerHTML = 'Commande effectuée !<br><br><br><br><br>' +  sendData;
+            document.querySelector('.affForm').innerHTML = 'Commande effectuée !<br><br><br><br><br>';// +  sendData;
 
         });
     });

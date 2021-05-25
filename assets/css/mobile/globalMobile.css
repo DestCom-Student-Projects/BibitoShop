@@ -70,14 +70,17 @@ footer {
 
 footer>div {
     width: 33vw;
+    margin-left: 3vw;
 }
 
 footer>div:nth-child(1n)>h4 {
     font-size: 20px;
     margin-top: 2px;
+    margin-bottom: 3px;
 }
 
 footer>div:nth-child(3n) {
+    margin-top: 25px;
     display: flex;
     flex-direction: column;
     filter: invert();
@@ -88,6 +91,7 @@ footer>div:nth-child(2n) {
     flex-direction: column;
     padding: 5px;
     text-align: center;
+    margin-top: 25px;
 }
 
 footer>div:nth-child(3n)>img {
