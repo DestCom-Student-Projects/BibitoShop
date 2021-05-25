@@ -1,12 +1,11 @@
 if (localStorage.getItem('panier') === null) {
     var panier = {};
     console.log('set panier')
-}
-else{
+} else {
     panier = JSON.parse(localStorage.getItem('panier'));
 }
 
-document.querySelector('.nmbItems').innerHTML = ((Object.keys(panier).length === 0)  ? ' ' : Object.keys(panier).length);
+document.querySelector('.nmbItems').innerHTML = ((Object.keys(panier).length === 0) ? ' ' : Object.keys(panier).length);
 
 /*
 var request = new XMLHttpRequest();

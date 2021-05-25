@@ -27,7 +27,10 @@
             <ul>
                 <li><a href="index.html" class="active">Accueil</a></li>
                 <li><a href="produit.html">Produits</a></li>
-                <li><a href="panier.html" class="panierShop"><img src="assets/img/shopping-cart-solid.svg" alt="panier"><p class="nmbItems"></p></a></li>
+                <li><a href="panier.html" class="panierShop"><img src="assets/img/shopping-cart-solid.svg" alt="panier">
+                        <p class="nmbItems"></p>
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -50,10 +53,9 @@
         </div>
         <p class="buttonAchat">ACHETER</p>
         <!-- FORMULAIRE-->
-
-        <div class="formulaire">
-            <h4>Informations à compléter</h4>
-            <form action="" method="post">
+        <div class="hidden  affForm">
+            <form>
+                <h4>Informations à compléter</h4>
                 <div>
                     <label for="nom">Nom :</label>
                     <input type="text" id="nom" name="user_nom" required><br>
@@ -64,37 +66,43 @@
                 </div>
                 <div>
                     <label for="mail">E-mail :</label>
-                    <input type="email" id="mail" name="user_mail" 
-                    placeholder="ton-email@site.com" required><br>
+                    <input type="email" id="mail" name="user_mail" placeholder="ton-email@site.com" required><br>
+                </div>
+                <div>
+                    <label for="num">Numéro de la rue :</label>
+                    <input type="text" id="num" name="user_num" required><br>
                 </div>
                 <div>
                     <label for="rue">Nom de la rue :</label>
                     <input type="text" id="rue" name="user_rue" required><br>
                 </div>
                 <div>
-                    <label for="num">Numéro :</label>
-                    <input type="text" id="num" name="user_num" required><br>
+                    <label for="cp">Code Postal :</label>
+                    <input type="text" id="cp" name="user_cp"><br>
                 </div>
                 <div>
                     <label for="ville">Ville :</label>
                     <input type="text" id="ville" name="user_ville" required><br>
                 </div>
-                <div>
-                    <label for="cp">Code Postal :</label>
-                    <input type="text" id="cp" name="user_cp"><br>
-                </div>
-                <div class="bouton">
-                    <input type="submit" value="Envoyer">
-                </div>
+                <!--<div class="bouton">
+                    <input type="submit" value="Envoyer" id="envoi">
+                </div>-->
             </form>
-
+            <div class="recap">
+                <h4>Récapitulatif</h4>
+                <div class="Titre">
+                    <p>Nom de l'objet</p>
+                    <p>Quantité</p>
+                    <p>Prix total</p>
+                </div>
+            </div>
         </div>
     </section>
     <footer>
         <div>
             <h4>BibitoShop</h4>
             <p>14 Avenue de la porte blindée</p>
-            <p>75022 - Paris City</p> 
+            <p>75022 - Paris City</p>
         </div>
         <div>
             <a>Mentions légales</a>
