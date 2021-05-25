@@ -8,17 +8,17 @@ body {
 
 .case {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     width: 50%;
 }
 
 .case>img {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
 }
 
 .case>div>h4 {
-    font-size: 25px;
+    font-size: 15px;
 }
 
 .case>p {
@@ -29,13 +29,13 @@ body {
 
 .info {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     margin: 15px;
     width: 100%;
 }
 
 .info>p {
-    font-style: italic;
+    display: none;
 }
 
 .info>img:hover {
@@ -43,7 +43,8 @@ body {
 }
 
 .info>img {
-    width: 8%;
+    width: 25%;
+    margin: 5px;
 }
 
 .quantity {
@@ -63,9 +64,9 @@ body {
     color: white;
     background-color: black;
     border-radius: 20px;
-    width: 10%;
+    width: 25vw;
     text-align: center;
-    margin-left: 80vw;
+    margin-left: 50vw;
     font-size: 20px;
 }
 
@@ -85,7 +86,7 @@ form {
     border-radius: 10%;
     width: 75vw;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     margin: 5%;
 
 }
@@ -100,7 +101,7 @@ label {
 }
 
 input {
-    margin-left: 170px;
+    margin-left: 0px;
     display: block;
     width: 150px;
 
@@ -111,16 +112,15 @@ input {
 }
 
 .recap>div {
-    width: 30vw;
+    width: 75vw;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     text-align: left;
 }
 
 .recap>div>p:nth-child(1n) {
     font-weight: 600;
     width: 800px;
-    padding-left: 30px;
 }
 
 .recap>div>p:nth-child(2n) {
@@ -141,8 +141,4 @@ input {
     text-align: right;
     font-weight: bold;
     font-size: 25px;
-}
-
-.buy {
-    margin-left: 80vw;
 }

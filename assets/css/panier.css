@@ -106,43 +106,48 @@ input {
 
 }
 
-.formulaire>h4 {
-    text-align: left;
-}
 
-.recap>div {
-    width: 30vw;
-    display: flex;
-    justify-content: flex-start;
-    text-align: left;
-}
 
-.recap>div>p:nth-child(1n) {
-    font-weight: 600;
-    width: 800px;
-    padding-left: 30px;
-}
+@media(min-width:1025px) {
+    .buy {
+        margin-left: 80vw;
+    }
 
-.recap>div>p:nth-child(2n) {
-    font-weight: 200;
-    font-style: italic;
-}
+    .formulaire>h4 {
+        text-align: left;
+    }
 
-.recap>div>p:nth-child(3n) {
-    font-weight: bold;
-    font-style: italic;
-}
+    .recap>div {
+        width: 30vw;
+        display: flex;
+        justify-content: flex-start;
+        text-align: left;
+    }
 
-.recap>.Titre {
-    border-bottom: solid 3px black;
-}
+    .recap>div>p:nth-child(1n) {
+        font-weight: 600;
+        width: 800px;
+        padding-left: 30px;
+    }
 
-.ptotalFinal {
-    text-align: right;
-    font-weight: bold;
-    font-size: 25px;
-}
+    .recap>div>p:nth-child(2n) {
+        font-weight: 200;
+        font-style: italic;
+    }
 
-.buy {
-    margin-left: 80vw;
+    .recap>div>p:nth-child(3n) {
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    .recap>.Titre {
+        border-bottom: solid 3px black;
+    }
+
+    .ptotalFinal {
+        text-align: right;
+        font-weight: bold;
+        font-size: 25px;
+    }
+
 }

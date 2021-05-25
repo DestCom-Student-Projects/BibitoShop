@@ -24,21 +24,21 @@ header {
     padding: 5px;
 }
 
-.notOpen{
+.notOpen {
     display: none;
 }
 
-nav{
+nav {
     height: 10vh;
     width: auto;
 }
 
-nav>img{
+nav>img {
     height: 85%;
     margin-top: 5%;
 }
 
-ul{
+ul {
     z-index: 10;
     margin: 0;
     height: 100vh;
@@ -51,7 +51,7 @@ ul{
     flex-direction: column;
 }
 
-li{
+li {
     text-align: right;
     margin-top: 20%;
     width: 40vw;
@@ -62,32 +62,37 @@ footer {
     width: 100%;
     height: 20vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     color: white;
     background-color: black;
     margin: 0;
-    padding-top: 3vh;
+}
+
+footer>div {
+    width: 33vw;
 }
 
 footer>div:nth-child(1n)>h4 {
     font-size: 20px;
+    margin-top: 2px;
 }
 
 footer>div:nth-child(3n) {
     display: flex;
-    justify-content: space-around;
-    width: 33vh;
+    flex-direction: column;
     filter: invert();
 }
 
 footer>div:nth-child(2n) {
     display: flex;
     flex-direction: column;
-    padding: 35px;
+    padding: 5px;
+    text-align: center;
 }
 
 footer>div:nth-child(3n)>img {
-    width: 30%;
+    width: 20%;
+    margin-left: 25%;
 }
 
 .hidden {
