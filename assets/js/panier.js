@@ -205,7 +205,7 @@ if (cart != null) {
             document.querySelector('.nmbItems').innerHTML = '';
 
             document.querySelector('.affForm').innerHTML = 'Commande effectuée !<br><br><br><br><br>';// +  sendData;
-
+            document.querySelector('.buy').classList.toggle('hidden');
         });
     });
 

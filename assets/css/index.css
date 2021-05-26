@@ -35,6 +35,15 @@
     padding-left: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
+    transition: color, border, background-color;
+    transition-duration: 0.2s;
+    transition-delay: 0.05s;
+}
+
+#hero>a:hover{
+    color: black;
+    border: solid 2px black;
+    background-color: white;
 }
 
 .fond {
