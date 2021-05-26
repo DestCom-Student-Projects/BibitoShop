@@ -14,7 +14,7 @@ document.querySelector('.nmbItems').innerHTML = ((Object.keys(panier).length ===
 appelProduit.open('GET', 'assets/json/produits.json');
 appelProduit.onload = function () {
     let data = JSON.parse(appelProduit.responseText);
-    for (let i = 1; i < Object.keys(data).length; i++) {
+    for (let i = 1; i <= Object.keys(data).length; i++) {
 
         let global = document.createElement('div');
         global.classList.toggle('produit-carte');

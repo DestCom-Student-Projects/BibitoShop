@@ -72,7 +72,7 @@
         "type": "deguisement"
     },
     "9": {
-        "nom": "Masque de green lantern",
+        "nom": "Ryan Reynolds",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales, metus lobortis maximus faucibus, lacus felis feugiat ex, eget accumsan dui mauris sed felis. Vivamus mattis a mi at euismod. Nullam iaculis tristique faucibus. In aliquam diam ut arcu consectetur, in sagittis ante tincidunt. Praesent sed vehicula sem.",
         "prix": "25.99",
         "prixTotal": "25.99",
@@ -81,7 +81,7 @@
         "type": "poupee"
     },
     "10": {
-        "nom": "Schtoumpf depressif",
+        "nom": "Schtroumpfette",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales, metus lobortis maximus faucibus, lacus felis feugiat ex, eget accumsan dui mauris sed felis. Vivamus mattis a mi at euismod. Nullam iaculis tristique faucibus. In aliquam diam ut arcu consectetur, in sagittis ante tincidunt. Praesent sed vehicula sem.",
         "prix": "25.99",
         "prixTotal": "25.99",
@@ -90,7 +90,7 @@
         "type": "poupee"
     },
     "11": {
-        "nom": "Bibito Red",
+        "nom": "Bibito édition Uranium",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales, metus lobortis maximus faucibus, lacus felis feugiat ex, eget accumsan dui mauris sed felis. Vivamus mattis a mi at euismod. Nullam iaculis tristique faucibus. In aliquam diam ut arcu consectetur, in sagittis ante tincidunt. Praesent sed vehicula sem.",
         "prix": "25.99",
         "prixTotal": "25.99",
@@ -99,20 +99,11 @@
         "type": "poupee"
     },
     "12": {
-        "nom": "Bibito Red",
+        "nom": "Bibito Shiny ",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales, metus lobortis maximus faucibus, lacus felis feugiat ex, eget accumsan dui mauris sed felis. Vivamus mattis a mi at euismod. Nullam iaculis tristique faucibus. In aliquam diam ut arcu consectetur, in sagittis ante tincidunt. Praesent sed vehicula sem.",
         "prix": "25.99",
         "prixTotal": "25.99",
         "source_img": "assets/img/bibitoViolet.png",
-        "quantites": 1,
-        "type": "poupee"
-    },
-    "13": {
-        "nom": "Bibito Red",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales, metus lobortis maximus faucibus, lacus felis feugiat ex, eget accumsan dui mauris sed felis. Vivamus mattis a mi at euismod. Nullam iaculis tristique faucibus. In aliquam diam ut arcu consectetur, in sagittis ante tincidunt. Praesent sed vehicula sem.",
-        "prix": "25.99",
-        "prixTotal": "25.99",
-        "source_img": "assets/img/bibitoVert.png",
         "quantites": 1,
         "type": "poupee"
     }
