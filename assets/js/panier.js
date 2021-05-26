@@ -137,9 +137,10 @@ if (cart != null) {
     qtt.forEach((item, index) => {
         let cle = Object.keys(cart);
         qtt[index].addEventListener('change', function (e) {
-            nmbTot[index].innerHTML = (Math.round((cart[cle[index]].prix * e.target.value) * 100) / 100) + '€';
-            cart[cle[index]].prixTotal = (Math.round((cart[cle[index]].prix * e.target.value) * 100) / 100);
-            cart[cle[index]].quantites = e.target.value;
+            nmbTot[index].innerHTML = (Math.round((cart[cle[index]].prix * (e.target.value > 9 ? 9 : e.target.value )) * 100) / 100) + '€';
+            cart[cle[index]].prixTotal = (Math.round((cart[cle[index]].prix * (e.target.value > 9 ? 9 : e.target.value )) * 100) / 100);
+            cart[cle[index]].quantites = (e.target.value > 9 ? 9 : e.target.value);
+            e.target.value = (e.target.value > 9 ? 9 : e.target.value );
         });
     })
 
