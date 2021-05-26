@@ -94,7 +94,7 @@ footer>div:nth-child(2n) {
     margin-top: 25px;
 }
 
-footer>div:nth-child(3n)>img {
+footer>div:nth-child(3n)>a>img {
     width: 20%;
     margin-left: 25%;
 }
