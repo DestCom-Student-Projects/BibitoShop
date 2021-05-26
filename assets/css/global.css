@@ -89,7 +89,7 @@ li>a:hover {
     color: white;
 }
 
-li>a:visited{
+li>a:visited {
     color: black;
 }
 
@@ -101,19 +101,19 @@ a:visited {
     color: white;
 }
 
-.rezo>a{
+.rezo>a {
     width: 100%;
     margin: 5px;
 }
 
-footer>div>a{
+footer>div>a {
     transition: opacity;
     transition-duration: 0.2s;
     transition-delay: 0.05s;
     color: white;
 }
 
-footer>div>a:hover{
+footer>div>a:hover {
     opacity: 0.5;
 }
 
@@ -144,19 +144,19 @@ footer>div>a:hover{
         margin: 0;
         padding-top: 3vh;
     }
-    
+
     footer>div:nth-child(1n)>h4 {
         font-size: 20px;
     }
-    
-    
-    
+
+
+
     footer>div:nth-child(2n) {
         display: flex;
         flex-direction: column;
         padding: 35px;
     }
-    
+
     footer>div:nth-child(3n)>img {
         width: 30%;
     }
