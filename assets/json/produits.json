@@ -99,11 +99,47 @@
         "type": "poupee"
     },
     "12": {
-        "nom": "Bibito Shiny ",
+        "nom": "Bibito Shiny",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales, metus lobortis maximus faucibus, lacus felis feugiat ex, eget accumsan dui mauris sed felis. Vivamus mattis a mi at euismod. Nullam iaculis tristique faucibus. In aliquam diam ut arcu consectetur, in sagittis ante tincidunt. Praesent sed vehicula sem.",
         "prix": "25.99",
         "prixTotal": "25.99",
         "source_img": "assets/img/bibitoViolet.png",
+        "quantites": 1,
+        "type": "poupee"
+    },
+    "13": {
+        "nom": "Trial",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales, metus lobortis maximus faucibus, lacus felis feugiat ex, eget accumsan dui mauris sed felis. Vivamus mattis a mi at euismod. Nullam iaculis tristique faucibus. In aliquam diam ut arcu consectetur, in sagittis ante tincidunt. Praesent sed vehicula sem.",
+        "prix": "25.99",
+        "prixTotal": "25.99",
+        "source_img": "assets/img/trial.png",
+        "quantites": 1,
+        "type": "poupee"
+    },
+    "14": {
+        "nom": "Briseur d'amitié",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales, metus lobortis maximus faucibus, lacus felis feugiat ex, eget accumsan dui mauris sed felis. Vivamus mattis a mi at euismod. Nullam iaculis tristique faucibus. In aliquam diam ut arcu consectetur, in sagittis ante tincidunt. Praesent sed vehicula sem.",
+        "prix": "25.99",
+        "prixTotal": "25.99",
+        "source_img": "assets/img/loup.png",
+        "quantites": 1,
+        "type": "poupee"
+    },
+    "15": {
+        "nom": "Dos",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales, metus lobortis maximus faucibus, lacus felis feugiat ex, eget accumsan dui mauris sed felis. Vivamus mattis a mi at euismod. Nullam iaculis tristique faucibus. In aliquam diam ut arcu consectetur, in sagittis ante tincidunt. Praesent sed vehicula sem.",
+        "prix": "25.99",
+        "prixTotal": "25.99",
+        "source_img": "assets/img/dos.png",
+        "quantites": 1,
+        "type": "poupee"
+    },
+    "16": {
+        "nom": "Croc Dog",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales, metus lobortis maximus faucibus, lacus felis feugiat ex, eget accumsan dui mauris sed felis. Vivamus mattis a mi at euismod. Nullam iaculis tristique faucibus. In aliquam diam ut arcu consectetur, in sagittis ante tincidunt. Praesent sed vehicula sem.",
+        "prix": "25.99",
+        "prixTotal": "25.99",
+        "source_img": "assets/img/croc.png",
         "quantites": 1,
         "type": "poupee"
     }
