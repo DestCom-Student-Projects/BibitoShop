@@ -4,7 +4,7 @@ body {
 
 #cart {
     margin: 3vw;
-    margin-bottom: 30vh;
+    min-height: 68vh;
 }
 
 .case {

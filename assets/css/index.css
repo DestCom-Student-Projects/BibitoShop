@@ -68,3 +68,37 @@
 #decouvrir>section {
     margin: 20px;
 }
+
+#decouvrir>section>a {
+    color: black;
+    border: solid 2px black;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 100;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: color, border, background-color;
+    transition-duration: 0.2s;
+    transition-delay: 0.05s;
+    text-align:center;
+    margin-left: 35%;
+}
+
+#decouvrir>section>a:hover {
+    color: white;
+    border: solid 2px white;
+    background-color: black;
+}
+
+@media screen and (max-width: 1025px) {
+	#decouvrir{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #decouvrir>section>a{
+        margin-left: 30%;
+    }
+}

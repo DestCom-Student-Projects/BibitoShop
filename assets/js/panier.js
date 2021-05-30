@@ -114,7 +114,7 @@ if (cart != null) {
     numPoubelle.forEach((bloc, numCase) => {
         numPoubelle[numCase].addEventListener('click', function (e) {
             let cle = Object.keys(cart);
-            console.log(cart);
+            console.log('console cart et cle', cart, cle);
             produitBloc[numCase].remove();
             console.log(produitBloc[numCase]);
             console.log(cart[numCase + 1]);
@@ -138,13 +138,11 @@ if (cart != null) {
         let cle = Object.keys(cart);
         qtt[index].addEventListener('change', function (e) {
             let nmb = 0;
-            if(e.target.value > 9){
+            if (e.target.value > 9) {
                 nmb = 9;
-            }
-            else if(e.target.value < 1){
+            } else if (e.target.value < 1) {
                 nmb = 1;
-            }
-            else{
+            } else {
                 nmb = e.target.value;
             }
             nmbTot[index].innerHTML = (Math.round((cart[cle[index]].prix * nmb) * 100) / 100) + '€';
