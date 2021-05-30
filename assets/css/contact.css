@@ -1,0 +1,27 @@
+.form{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 75vh;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: 5%;
+    padding: 5%;
+}
+
+@media screen and (max-width: 1025px) {
+	.form{
+        display: flex;
+        flex-direction: column;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        margin: 5%;
+        padding: 5%;
+    }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BibitoShop</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (min-width: 320px) and (max-width: 1025px)" href="assets/CSS/mobile/globalMobile.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" title="page d'accueil">
+            <img src="assets/img/bibito.svg" alt="logo">
+        </a>
+        <!-- Navbar -->
+        <nav>
+            <img src="assets/img/bars-solid.svg" alt="menu" class="bars">
+
+            <!-- Liste liens -->
+            <ul class="navLinks notOpen">
+                <li><a href="index.html" class="hover">Accueil</a></li>
+                <li><a href="produit.html" class="hover">Produits</a></li>
+                <li><a href="contact.html" class="hover">Contact</a></li>
+                <li><a href="panier.html" class="panierShop"><img src="assets/img/shopping-cart-solid.svg" alt="panier">
+                        <p class="nmbItems"></p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="form">
+        <h1>Nous contacter :</h1>
+        <form method="POST" action="contact.html">
+            <label for="email">Votre mail :</label>
+            <input type="email" name="email" id="email" required>
+            <label for="message">Votre message :</label>
+            <textarea name="message" id="message" required></textarea>
+            <label for="categorie">Cela concerne ?</label>
+            <select name="categorie" id="categorie" required>
+                <option>------------</option>
+                <option value="commande">Une commande</option>
+                <option value="partenariat">Un partenariat</option>
+                <option value="informations">Des informations</option>
+            </select>
+            <label for="name">Votre nom :</label>
+            <input type="text" name="name" id="name">
+            <label for="tel">Votre telephone :</label>
+            <input type="tel" name="tel" id="tel">
+            <input type="submit" value="ENVOYER" id="envoi" disabled>
+        </form>
+    </section>
+    <footer>
+        <div>
+            <h4>BibitoShop</h4>
+            <p>14 Avenue de la porte blindée</p>
+            <p>75022 - Paris City</p>
+        </div>
+        <div>
+            <a href="https://fr.wikipedia.org/wiki/Obligations_l%C3%A9gales_sur_Internet_en_France">Mentions légales</a>
+            <a href="#">CGV</a>
+            <a href="#">CGU</a>
+            <p>Copyright - BibitoShop - 2021</p>
+        </div>
+        <div class="rezo">
+            <a href="#"><img src="assets/img/facebook-square-brands.svg" alt="facebook"></a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="assets/img/instagram-square-brands.svg"
+                    alt="instagram"></a>
+            <a href="#"><img src="assets/img/twitter-square-brands.svg" alt="twitter"></a>
+        </div>
+    </footer>
+    <script src="assets/js/contact.js"></script>
+    <script src="assets/js/global.js"></script>
+</body>
+
+</html>
